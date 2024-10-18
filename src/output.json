@@ -1,0 +1,447 @@
+{
+  "entries": [
+    {
+      "filepath": "src/exercises/any-of.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/any-of.ts",
+      "difficulty": "medium",
+      "tags": [
+        "conditional-types",
+        "index-accessed"
+      ],
+      "exercise": "Any Of"
+    },
+    {
+      "filepath": "src/exercises/bem-css-selectors.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/bem-css-selectors.ts",
+      "difficulty": "easy",
+      "tags": [
+        "conditional-types",
+        "distribution",
+        "template-literals"
+      ],
+      "exercise": "BEM CSS Selectors"
+    },
+    {
+      "filepath": "src/exercises/cat-dog.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/cat-dog.ts",
+      "difficulty": "easy",
+      "tags": [
+        "generics-with-constraints",
+        "learning-generics",
+        "utility-types"
+      ],
+      "exercise": "Cat Dog"
+    },
+    {
+      "filepath": "src/exercises/common-fruits.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/common-fruits.ts",
+      "difficulty": "easy",
+      "tags": [
+        "utility-types"
+      ],
+      "exercise": "Common Fruits"
+    },
+    {
+      "filepath": "src/exercises/concat.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/concat.ts",
+      "difficulty": "easy",
+      "tags": [
+        "generics-with-constraints",
+        "learning-arrays",
+        "learning-generics"
+      ],
+      "exercise": "Concat"
+    },
+    {
+      "filepath": "src/exercises/deep-partial.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/deep-partial.ts",
+      "difficulty": "hard",
+      "tags": [
+        "conditional-types",
+        "index-accessed",
+        "mapped-types",
+        "recursion",
+        "utility-types"
+      ],
+      "exercise": "Deep Partial"
+    },
+    {
+      "filepath": "src/exercises/discriminated-union-with-unique-values-to-object.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/discriminated-union-with-unique-values-to-object.ts",
+      "difficulty": "medium",
+      "tags": [
+        "conditional-types",
+        "distribution",
+        "index-accessed",
+        "infer",
+        "key-remapping",
+        "mapped-types"
+      ],
+      "exercise": "Discriminated Union with Unique Values to Object"
+    },
+    {
+      "filepath": "src/exercises/dynamic-route.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/dynamic-route.ts",
+      "difficulty": "extreme",
+      "tags": [
+        "conditional-types",
+        "distribution",
+        "index-accessed",
+        "infer",
+        "learning-arrays",
+        "mapped-types",
+        "recursion",
+        "template-literals",
+        "utility-types"
+      ],
+      "exercise": "Dynamic Route"
+    },
+    {
+      "filepath": "src/exercises/event-handler.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/event-handler.ts",
+      "difficulty": "medium",
+      "tags": [
+        "distribution",
+        "generics-with-constraints",
+        "template-literals",
+        "utility-types"
+      ],
+      "exercise": "Event Handler"
+    },
+    {
+      "filepath": "src/exercises/event-types.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/event-types.ts",
+      "difficulty": "medium",
+      "tags": [
+        "generics-with-constraints",
+        "index-accessed",
+        "learning-generics",
+        "utility-types"
+      ],
+      "exercise": "Event Types"
+    },
+    {
+      "filepath": "src/exercises/finite-state-machine.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/finite-state-machine.ts",
+      "difficulty": "easy",
+      "tags": [
+        "utility-types"
+      ],
+      "exercise": "Finite State Machine"
+    },
+    {
+      "filepath": "src/exercises/if.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/if.ts",
+      "difficulty": "easy",
+      "tags": [
+        "conditional-types",
+        "distribution",
+        "generics-with-constraints"
+      ],
+      "exercise": "If"
+    },
+    {
+      "filepath": "src/exercises/infer-in-union-types.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/infer-in-union-types.ts",
+      "difficulty": "easy",
+      "tags": [
+        "conditional-types",
+        "distribution"
+      ],
+      "exercise": "Infer in Union Types"
+    },
+    {
+      "filepath": "src/exercises/infer-with-raw-values.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/infer-with-raw-values.ts",
+      "difficulty": "easy",
+      "tags": [
+        "conditional-types",
+        "generics-with-constraints",
+        "index-accessed"
+      ],
+      "exercise": "Infer with Raw Values"
+    },
+    {
+      "filepath": "src/exercises/length-of-tuple.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/length-of-tuple.ts",
+      "difficulty": "easy",
+      "tags": [
+        "conditional-types",
+        "generics-with-constraints",
+        "index-accessed",
+        "infer",
+        "learning-arrays",
+        "learning-generics"
+      ],
+      "exercise": "Length of Tuple"
+    },
+    {
+      "filepath": "src/exercises/mutually-exclusive-properties.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/mutually-exclusive-properties.ts",
+      "difficulty": "medium",
+      "tags": [
+        "index-accessed",
+        "mapped-types"
+      ],
+      "exercise": "Mutually Exclusive Properties"
+    },
+    {
+      "filepath": "src/exercises/my-exclude.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/my-exclude.ts",
+      "difficulty": "easy",
+      "tags": [
+        "conditional-types",
+        "distribution",
+        "utility-types"
+      ],
+      "exercise": "My Exclude"
+    },
+    {
+      "filepath": "src/exercises/narrow-with-arrays.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/narrow-with-arrays.ts",
+      "difficulty": "medium",
+      "tags": [
+        "generics-with-constraints",
+        "index-accessed",
+        "learning-arrays",
+        "learning-generics",
+        "utility-types"
+      ],
+      "exercise": "Narrow with Arrays"
+    },
+    {
+      "filepath": "src/exercises/non-empty-array.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/non-empty-array.ts",
+      "difficulty": "easy",
+      "tags": [
+        "learning-arrays",
+        "learning-generics"
+      ],
+      "exercise": "Non-empty Array"
+    },
+    {
+      "filepath": "src/exercises/omit-by-type.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/omit-by-type.ts",
+      "difficulty": "hard",
+      "tags": [
+        "conditional-types",
+        "distribution",
+        "index-accessed",
+        "key-remapping",
+        "mapped-types"
+      ],
+      "exercise": "Omit by Type"
+    },
+    {
+      "filepath": "src/exercises/partial-required.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/partial-required.ts",
+      "difficulty": "medium",
+      "tags": [
+        "generics-with-constraints",
+        "learning-generics",
+        "utility-types"
+      ],
+      "exercise": "Partial Required"
+    },
+    {
+      "filepath": "src/exercises/printf.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/printf.ts",
+      "difficulty": "hard",
+      "tags": [
+        "conditional-types",
+        "index-accessed",
+        "infer",
+        "recursion",
+        "template-literals"
+      ],
+      "exercise": "Printf"
+    },
+    {
+      "filepath": "src/exercises/promise-all.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/promise-all.ts",
+      "difficulty": "medium",
+      "tags": [
+        "generics-with-constraints",
+        "learning-arrays",
+        "learning-generics",
+        "mapped-types",
+        "utility-types"
+      ],
+      "exercise": "Promise All"
+    },
+    {
+      "filepath": "src/exercises/replace.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/replace.ts",
+      "difficulty": "hard",
+      "tags": [
+        "conditional-types",
+        "generics-with-constraints",
+        "infer",
+        "template-literals"
+      ],
+      "exercise": "Replace"
+    },
+    {
+      "filepath": "src/exercises/reverse-arguments.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/reverse-arguments.ts",
+      "difficulty": "hard",
+      "tags": [
+        "conditional-types",
+        "generics-with-constraints",
+        "infer",
+        "learning-arrays",
+        "recursion",
+        "utility-types"
+      ],
+      "exercise": "Reverse Arguments"
+    },
+    {
+      "filepath": "src/exercises/starts-with.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/starts-with.ts",
+      "difficulty": "easy",
+      "tags": [
+        "conditional-types",
+        "generics-with-constraints",
+        "template-literals"
+      ],
+      "exercise": "StartsWith"
+    },
+    {
+      "filepath": "src/exercises/team-members.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/team-members.ts",
+      "difficulty": "easy",
+      "tags": [
+        "utility-types"
+      ],
+      "exercise": "Team Members"
+    },
+    {
+      "filepath": "src/exercises/template-literal-value-extraction.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/template-literal-value-extraction.ts",
+      "difficulty": "easy",
+      "tags": [
+        "conditional-types",
+        "infer",
+        "template-literals"
+      ],
+      "exercise": "Template Literal Value Extraction"
+    },
+    {
+      "filepath": "src/exercises/tree-path-array.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/tree-path-array.ts",
+      "difficulty": "hard",
+      "tags": [
+        "conditional-types",
+        "index-accessed",
+        "learning-arrays",
+        "recursion"
+      ],
+      "exercise": "Tree Path Array"
+    },
+    {
+      "filepath": "src/exercises/trim-left.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/trim-left.ts",
+      "difficulty": "medium",
+      "tags": [
+        "conditional-types",
+        "distribution",
+        "infer",
+        "recursion",
+        "template-literals"
+      ],
+      "exercise": "Trim Left"
+    },
+    {
+      "filepath": "src/exercises/tuple-to-object.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/tuple-to-object.ts",
+      "difficulty": "easy",
+      "tags": [
+        "generics-with-constraints",
+        "index-accessed",
+        "learning-arrays",
+        "mapped-types"
+      ],
+      "exercise": "Tuple to Object"
+    },
+    {
+      "filepath": "src/exercises/unique.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/unique.ts",
+      "difficulty": "hard",
+      "tags": [
+        "conditional-types",
+        "distribution",
+        "generics-with-constraints",
+        "index-accessed",
+        "infer",
+        "learning-arrays",
+        "recursion"
+      ],
+      "exercise": "Unique"
+    },
+    {
+      "filepath": "src/exercises/unique-extreme.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/unique-extreme.ts",
+      "difficulty": "extreme",
+      "tags": [
+        "conditional-types",
+        "distribution",
+        "generics-with-constraints",
+        "index-accessed",
+        "infer",
+        "learning-arrays",
+        "recursion"
+      ],
+      "exercise": "Unique Extreme"
+    },
+    {
+      "filepath": "src/exercises/utility-types-madness.ts",
+      "url": "https:/github.com/m-thompson-code/advanced-typescript-workshop/tree/main/src/exercises/utility-types-madness.ts",
+      "difficulty": "easy",
+      "tags": [
+        "learning-generics",
+        "utility-types"
+      ],
+      "exercise": "Utility Types Madness"
+    }
+  ],
+  "tags": [
+    "conditional-types",
+    "index-accessed",
+    "template-literals",
+    "learning-generics",
+    "learning-arrays",
+    "generics-with-constraints",
+    "utility-types",
+    "mapped-types",
+    "key-remapping",
+    "infer",
+    "distribution",
+    "recursion"
+  ],
+  "difficulties": [
+    "easy",
+    "medium",
+    "hard",
+    "extreme"
+  ],
+  "tagCounts": {
+    "conditional-types": 20,
+    "index-accessed": 15,
+    "template-literals": 8,
+    "learning-generics": 9,
+    "learning-arrays": 11,
+    "generics-with-constraints": 16,
+    "utility-types": 14,
+    "mapped-types": 7,
+    "key-remapping": 2,
+    "infer": 10,
+    "distribution": 11,
+    "recursion": 8
+  },
+  "difficultyCounts": {
+    "easy": 16,
+    "medium": 9,
+    "hard": 7,
+    "extreme": 2
+  }
+}
