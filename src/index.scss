@@ -13,6 +13,13 @@
   height: max-content;
 }
 
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
 html {
   height: 100%;
 }
@@ -28,4 +35,9 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+a {
+  // Hack to keep link tags minimal width in flex container
+  width: fit-content;
 }

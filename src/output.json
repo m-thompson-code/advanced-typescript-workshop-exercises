@@ -8,6 +8,7 @@
         "conditional-types",
         "index-accessed"
       ],
+      "filename": "any-of",
       "exercise": "Any Of"
     },
     {
@@ -19,6 +20,7 @@
         "distribution",
         "template-literals"
       ],
+      "filename": "bem-css-selectors",
       "exercise": "BEM CSS Selectors"
     },
     {
@@ -30,6 +32,7 @@
         "learning-generics",
         "utility-types"
       ],
+      "filename": "cat-dog",
       "exercise": "Cat Dog"
     },
     {
@@ -39,6 +42,7 @@
       "tags": [
         "utility-types"
       ],
+      "filename": "common-fruits",
       "exercise": "Common Fruits"
     },
     {
@@ -50,6 +54,7 @@
         "learning-arrays",
         "learning-generics"
       ],
+      "filename": "concat",
       "exercise": "Concat"
     },
     {
@@ -63,6 +68,7 @@
         "recursion",
         "utility-types"
       ],
+      "filename": "deep-partial",
       "exercise": "Deep Partial"
     },
     {
@@ -77,6 +83,7 @@
         "key-remapping",
         "mapped-types"
       ],
+      "filename": "discriminated-union-with-unique-values-to-object",
       "exercise": "Discriminated Union with Unique Values to Object"
     },
     {
@@ -94,6 +101,7 @@
         "template-literals",
         "utility-types"
       ],
+      "filename": "dynamic-route",
       "exercise": "Dynamic Route"
     },
     {
@@ -106,6 +114,7 @@
         "template-literals",
         "utility-types"
       ],
+      "filename": "event-handler",
       "exercise": "Event Handler"
     },
     {
@@ -118,6 +127,7 @@
         "learning-generics",
         "utility-types"
       ],
+      "filename": "event-types",
       "exercise": "Event Types"
     },
     {
@@ -127,6 +137,7 @@
       "tags": [
         "utility-types"
       ],
+      "filename": "finite-state-machine",
       "exercise": "Finite State Machine"
     },
     {
@@ -138,6 +149,7 @@
         "distribution",
         "generics-with-constraints"
       ],
+      "filename": "if",
       "exercise": "If"
     },
     {
@@ -148,6 +160,7 @@
         "conditional-types",
         "distribution"
       ],
+      "filename": "infer-in-union-types",
       "exercise": "Infer in Union Types"
     },
     {
@@ -159,6 +172,7 @@
         "generics-with-constraints",
         "index-accessed"
       ],
+      "filename": "infer-with-raw-values",
       "exercise": "Infer with Raw Values"
     },
     {
@@ -173,6 +187,7 @@
         "learning-arrays",
         "learning-generics"
       ],
+      "filename": "length-of-tuple",
       "exercise": "Length of Tuple"
     },
     {
@@ -183,6 +198,7 @@
         "index-accessed",
         "mapped-types"
       ],
+      "filename": "mutually-exclusive-properties",
       "exercise": "Mutually Exclusive Properties"
     },
     {
@@ -194,6 +210,7 @@
         "distribution",
         "utility-types"
       ],
+      "filename": "my-exclude",
       "exercise": "My Exclude"
     },
     {
@@ -207,6 +224,7 @@
         "learning-generics",
         "utility-types"
       ],
+      "filename": "narrow-with-arrays",
       "exercise": "Narrow with Arrays"
     },
     {
@@ -217,6 +235,7 @@
         "learning-arrays",
         "learning-generics"
       ],
+      "filename": "non-empty-array",
       "exercise": "Non-empty Array"
     },
     {
@@ -230,6 +249,7 @@
         "key-remapping",
         "mapped-types"
       ],
+      "filename": "omit-by-type",
       "exercise": "Omit by Type"
     },
     {
@@ -241,6 +261,7 @@
         "learning-generics",
         "utility-types"
       ],
+      "filename": "partial-required",
       "exercise": "Partial Required"
     },
     {
@@ -254,6 +275,7 @@
         "recursion",
         "template-literals"
       ],
+      "filename": "printf",
       "exercise": "Printf"
     },
     {
@@ -267,6 +289,7 @@
         "mapped-types",
         "utility-types"
       ],
+      "filename": "promise-all",
       "exercise": "Promise All"
     },
     {
@@ -279,6 +302,7 @@
         "infer",
         "template-literals"
       ],
+      "filename": "replace",
       "exercise": "Replace"
     },
     {
@@ -293,6 +317,7 @@
         "recursion",
         "utility-types"
       ],
+      "filename": "reverse-arguments",
       "exercise": "Reverse Arguments"
     },
     {
@@ -304,6 +329,7 @@
         "generics-with-constraints",
         "template-literals"
       ],
+      "filename": "starts-with",
       "exercise": "StartsWith"
     },
     {
@@ -313,6 +339,7 @@
       "tags": [
         "utility-types"
       ],
+      "filename": "team-members",
       "exercise": "Team Members"
     },
     {
@@ -324,6 +351,7 @@
         "infer",
         "template-literals"
       ],
+      "filename": "template-literal-value-extraction",
       "exercise": "Template Literal Value Extraction"
     },
     {
@@ -336,6 +364,7 @@
         "learning-arrays",
         "recursion"
       ],
+      "filename": "tree-path-array",
       "exercise": "Tree Path Array"
     },
     {
@@ -349,6 +378,7 @@
         "recursion",
         "template-literals"
       ],
+      "filename": "trim-left",
       "exercise": "Trim Left"
     },
     {
@@ -361,6 +391,7 @@
         "learning-arrays",
         "mapped-types"
       ],
+      "filename": "tuple-to-object",
       "exercise": "Tuple to Object"
     },
     {
@@ -376,6 +407,7 @@
         "learning-arrays",
         "recursion"
       ],
+      "filename": "unique",
       "exercise": "Unique"
     },
     {
@@ -391,6 +423,7 @@
         "learning-arrays",
         "recursion"
       ],
+      "filename": "unique-extreme",
       "exercise": "Unique Extreme"
     },
     {
@@ -401,6 +434,7 @@
         "learning-generics",
         "utility-types"
       ],
+      "filename": "utility-types-madness",
       "exercise": "Utility Types Madness"
     }
   ],

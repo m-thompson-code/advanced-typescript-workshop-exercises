@@ -1,13 +1,31 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
 import './index.scss'
-import { init } from './firebase/app.ts';
+import App from './pages/App.tsx'
+import { authenticate } from './firebase/user.ts'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import { Solutions } from './pages/Solutions.tsx'
 
-init();
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/solutions",
+    element: <Solutions />,
+  },
+]);
+
+
+// Kick off auth
+authenticate().then(console.log)
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>,
 )
