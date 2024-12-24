@@ -6,6 +6,8 @@ import { entries } from "../output.json";
 export interface Solution {
     value: string;
     timestamp: number;
+    event: string;
+    suggested: string;
 }
 
 export interface UserSolutions {
@@ -43,7 +45,7 @@ export const getSolutions = (callback: (solutions: ExerciseSolutions) => void) =
     });
 };
 
-export const setSolution = async (exercise: string, solution: string) => {
+export const setSolution = async (exercise: string, solution: string, suggested: string) => {
     const userId = getUser()?.uid;
 
     if (!userId) {
@@ -56,6 +58,8 @@ export const setSolution = async (exercise: string, solution: string) => {
         [exercise]: {
             value: solution,
             timestamp: Date.now(),
+            event: 'Code Mash',
+            suggested
         },
     } as {
         exercise: Solution;

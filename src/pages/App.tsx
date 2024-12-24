@@ -91,6 +91,7 @@ interface ExerciseModalProps {
 const ExerciseModal: FC<ExerciseModalProps> = ({ exercise, open, setOpen }) => {
     const [loading, setLoading] = useState(false);
     const [value, setValue] = useState("");
+    const [suggested, setSuggested] = useState("");
     const [showSuccess, setShowSuccess] = useState(false);
     const [showFailure, setShowFailure] = useState(false);
     const handleClose = () => setOpen(false);
@@ -118,7 +119,7 @@ const ExerciseModal: FC<ExerciseModalProps> = ({ exercise, open, setOpen }) => {
 
         setLoading(true);
         try {
-            await setSolution(exercise, value);
+            await setSolution(exercise, value, suggested);
             setShowSuccess(true);
         } catch (e) {
             console.error(e);
@@ -161,6 +162,7 @@ const ExerciseModal: FC<ExerciseModalProps> = ({ exercise, open, setOpen }) => {
                             multiline
                             rows={getRows()}
                         />
+                        <TextField value={suggested} onChange={(e) => setSuggested(e.target.value)} label="Suggested Complexity" placeholder="Did this exercise feel like its complexity is off? Add one here and we'll update it! :)" />
                         <Button variant="contained" type="submit">
                             Submit
                         </Button>
