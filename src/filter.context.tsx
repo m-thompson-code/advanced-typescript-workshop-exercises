@@ -1,11 +1,12 @@
 import { createContext, FC, ReactNode, useContext, useMemo, useState } from "react";
-import { tagCounts, difficultyCounts } from "./output.json";
+import { tagCounts, complexityCounts } from "./output.json";
 
 interface FilterChip {
     display: string;
     displayWithCount: string;
     value: string;
     selected: boolean;
+    count: number;
 }
 
 function toFilterChips<T extends Record<string, number>>(input: T): FilterChip[] {
@@ -19,15 +20,25 @@ function toFilterChips<T extends Record<string, number>>(input: T): FilterChip[]
                 displayWithCount: `${display} (${count})`,
                 value: chip,
                 selected: false,
+                count,
             };
         });
+}
+
+function toComplexityFilterChips<T extends Record<string, number>>(input: T): FilterChip[] {
+    const chips = toFilterChips(input);
+    return chips.map((chip) => ({
+        ...chip,
+        display: `Complexity ${chip.display}`,
+        displayWithCount: `Complexity ${chip.display} (${chip.count})`,
+    }));
 }
 
 interface FiltersContextType {
     filterTags: FilterChip[];
     setFilterTags: React.Dispatch<React.SetStateAction<FilterChip[]>>;
-    filterDifficulties: FilterChip[];
-    setFilterDifficulties: React.Dispatch<React.SetStateAction<FilterChip[]>>;
+    filterComplexities: FilterChip[];
+    setFilterComplexities: React.Dispatch<React.SetStateAction<FilterChip[]>>;
     onTagClick: (value: string) => () => void;
     onDifficultyClick: (value: string) => () => void;
 }
@@ -40,7 +51,7 @@ export interface FiltersProviderProps {
 
 export const FiltersProvider: FC<FiltersProviderProps> = ({ children }) => {
     const [filterTags, setFilterTags] = useState(toFilterChips(tagCounts));
-    const [filterDifficulties, setFilterDifficulties] = useState(toFilterChips(difficultyCounts));
+    const [filterComplexities, setFilterComplexities] = useState(toComplexityFilterChips(complexityCounts));
 
     const getOnClick =
         ([filters, setFilters]: [FilterChip[], React.Dispatch<React.SetStateAction<FilterChip[]>>]) =>
@@ -58,11 +69,11 @@ export const FiltersProvider: FC<FiltersProviderProps> = ({ children }) => {
         };
 
     const onTagClick = getOnClick([filterTags, setFilterTags]);
-    const onDifficultyClick = getOnClick([filterDifficulties, setFilterDifficulties]);
+    const onDifficultyClick = getOnClick([filterComplexities, setFilterComplexities]);
 
     const value = useMemo(() => {
-        return { filterTags, setFilterTags, filterDifficulties, setFilterDifficulties, onTagClick, onDifficultyClick };
-    }, [filterDifficulties, filterTags, onDifficultyClick, onTagClick]);
+        return { filterTags, setFilterTags, filterComplexities, setFilterComplexities, onTagClick, onDifficultyClick };
+    }, [filterComplexities, filterTags, onDifficultyClick, onTagClick]);
 
     return <FiltersContext.Provider value={value}>{children}</FiltersContext.Provider>;
 };

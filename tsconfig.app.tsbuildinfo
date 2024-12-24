@@ -1,0 +1,1 @@
+{"root":["./src/filter.context.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/firebase/app.ts","./src/firebase/firestore.ts","./src/firebase/index.ts","./src/firebase/user.ts","./src/hooks/index.ts","./src/hooks/usesolutions.ts","./src/pages/app.tsx","./src/pages/solutions.tsx"],"version":"5.6.3"}

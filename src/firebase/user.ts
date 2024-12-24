@@ -8,7 +8,6 @@ let error = new Error('User not authorized');
 
 export const authenticate = () => signInAnonymously(auth)
 .then((certs) => {
-  console.log(certs.user)
   user = certs.user;
   return user;
 })

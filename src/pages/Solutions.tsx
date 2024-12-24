@@ -51,8 +51,6 @@ export const Solutions = () => {
         );
     }
 
-    console.log(solutions);
-
     const handleAccordionOnChange = (entry: typeof entries[number]) => () => {
         const value = entry.filename
         if (expanded === value) {

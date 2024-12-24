@@ -41,10 +41,10 @@ interface ExerciseProps {
 
 const Exercise: FC<ExerciseProps> = ({ entry }) => {
     const [open, setOpen] = useState(false);
-    const { filterTags, filterDifficulties, onTagClick, onDifficultyClick } = useFilters();
+    const { filterTags, filterComplexities, onTagClick, onDifficultyClick } = useFilters();
 
     const tags = entry.tags.map((tag) => filterTags.find((filterTag) => filterTag.value === tag)!);
-    const difficulty = filterDifficulties.find((filterDifficulty) => filterDifficulty.value === entry.difficulty)!;
+    const complexity = filterComplexities.find((filterComplexity) => Number(filterComplexity.value) === entry.complexity)!;
 
     return (
         <>
@@ -55,12 +55,12 @@ const Exercise: FC<ExerciseProps> = ({ entry }) => {
                 </Link>
                 <div className="chips">
                     <Chip
-                        label={difficulty.display}
-                        variant={difficulty.selected ? "filled" : "outlined"}
-                        onClick={onDifficultyClick(difficulty.value)}
+                        label={complexity.display}
+                        variant={complexity.selected ? "filled" : "outlined"}
+                        onClick={onDifficultyClick(complexity.value)}
                     />
-                    {tags.map((tag, i) => (
-                        <Chip key={i} label={tag.display} variant={tag.selected ? "filled" : "outlined"} onClick={onTagClick(tag.value)} />
+                    {tags.map((tag) => (
+                        <Chip key={tag.displayWithCount} label={tag.display} variant={tag.selected ? "filled" : "outlined"} onClick={onTagClick(tag.value)} />
                     ))}
                 </div>
                 <div>
@@ -173,7 +173,7 @@ const ExerciseModal: FC<ExerciseModalProps> = ({ exercise, open, setOpen }) => {
 
 const Main = () => {
     const [search, setSearch] = useState("");
-    const { filterTags, filterDifficulties, onTagClick, onDifficultyClick } = useFilters();
+    const { filterTags, filterComplexities, onTagClick, onDifficultyClick } = useFilters();
 
     const filteredEntries = entries.filter((entry) => {
         const includeTags = filterTags.filter((tag) => tag.selected);
@@ -182,9 +182,9 @@ const Main = () => {
             return false;
         }
 
-        const includeDifficulties = filterDifficulties.filter((difficulty) => difficulty.selected);
+        const includeDifficulties = filterComplexities.filter((complexity) => complexity.selected);
 
-        if (includeDifficulties.length && includeDifficulties.some((difficulty) => difficulty.value !== entry.difficulty)) {
+        if (includeDifficulties.length && includeDifficulties.some((complexity) => Number(complexity.value) !== entry.complexity)) {
             return false;
         }
 
@@ -200,7 +200,6 @@ const Main = () => {
         }
 
         const similarity = stringSimilarity(cleanedExercise, cleanedSearch);
-        console.log(similarity, cleanedExercise);
 
         return similarity > 0.5;
     });
@@ -219,9 +218,9 @@ const Main = () => {
                     placeholder={`Ex: ${randomExercise.exercise}`}
                 />
                 <div className="chips">
-                    {filterTags.map((chip, i) => (
+                    {filterTags.map((chip) => (
                         <Chip
-                            key={i}
+                            key={chip.displayWithCount}
                             label={chip.displayWithCount}
                             variant={chip.selected ? "filled" : "outlined"}
                             onClick={onTagClick(chip.value)}
@@ -229,9 +228,9 @@ const Main = () => {
                     ))}
                 </div>
                 <div className="chips">
-                    {filterDifficulties.map((chip, i) => (
+                    {filterComplexities.map((chip) => (
                         <Chip
-                            key={i}
+                            key={chip.displayWithCount}
                             label={chip.displayWithCount}
                             variant={chip.selected ? "filled" : "outlined"}
                             onClick={onDifficultyClick(chip.value)}
@@ -243,8 +242,8 @@ const Main = () => {
 
             <div>Search Results: {filteredEntries.length}</div>
 
-            {filteredEntries.map((entry, i) => (
-                <Exercise key={i} entry={entry} />
+            {filteredEntries.map((entry) => (
+                <Exercise key={entry.exercise} entry={entry} />
             ))}
         </>
     );
