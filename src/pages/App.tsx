@@ -186,7 +186,7 @@ const Main = () => {
 
         const includeDifficulties = filterComplexities.filter((complexity) => complexity.selected);
 
-        if (includeDifficulties.length && includeDifficulties.some((complexity) => Number(complexity.value) !== entry.complexity)) {
+        if (includeDifficulties.length && !includeDifficulties.some((complexity) => Number(complexity.value) === entry.complexity)) {
             return false;
         }
 

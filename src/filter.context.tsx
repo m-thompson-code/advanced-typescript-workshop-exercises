@@ -1,5 +1,6 @@
 import { createContext, FC, ReactNode, useContext, useMemo, useState } from "react";
 import { tagCounts, complexityCounts } from "./output.json";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 interface FilterChip {
     display: string;
@@ -50,8 +51,24 @@ export interface FiltersProviderProps {
 }
 
 export const FiltersProvider: FC<FiltersProviderProps> = ({ children }) => {
-    const [filterTags, setFilterTags] = useState(toFilterChips(tagCounts));
-    const [filterComplexities, setFilterComplexities] = useState(toComplexityFilterChips(complexityCounts));
+    const [searchParams] = useSearchParams();
+    const navigate = useNavigate();
+    const [filterTags, setFilterTags] = useState(
+        toFilterChips(tagCounts).map((filter) => {
+            if ((searchParams.get("filters") ?? "").split(",").includes(filter.value)) {
+                return { ...filter, selected: true };
+            }
+
+            return filter;
+        }),
+    );
+    const [filterComplexities, setFilterComplexities] = useState(toComplexityFilterChips(complexityCounts).map((filter) => {
+        if ((searchParams.get("complexities") ?? "").split(",").includes(filter.value)) {
+            return { ...filter, selected: true };
+        }
+
+        return filter;
+    }));
 
     const getOnClick =
         ([filters, setFilters]: [FilterChip[], React.Dispatch<React.SetStateAction<FilterChip[]>>]) =>
@@ -65,6 +82,32 @@ export const FiltersProvider: FC<FiltersProviderProps> = ({ children }) => {
             }
 
             updatedChip.selected = !updatedChip.selected;
+
+            if (setFilters === setFilterTags) {
+                searchParams.set(
+                    "filters",
+                    updatedFilters
+                        .filter(({ selected }) => selected)
+                        .map(({ value }) => value)
+                        .join(","),
+                );
+            } else if (setFilters === setFilterComplexities) {
+                searchParams.set(
+                    "complexities",
+                    updatedFilters
+                        .filter(({ selected }) => selected)
+                        .map(({ value }) => value)
+                        .join(","),
+                );
+            }
+
+            console.log(searchParams);
+
+            navigate({
+                pathname: location.pathname,
+                search: searchParams.toString(),
+            });
+
             setFilters(updatedFilters);
         };
 
